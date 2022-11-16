@@ -8,7 +8,7 @@ git clone $1 student-submission
 echo "successfully copy"
 cd student-submission
 
-if [-e ListExample.java];
+if [-e ListExamples.java];
 then
     echo "The file exist"
 else
