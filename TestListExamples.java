@@ -50,7 +50,7 @@ public class TestListExamples{
         assertEquals(result, ListExamples.filter(list1,sc));
     }
 
-    @Test 
+    @Test(timeout = 100)
 	public void testFilter1() {
         List<String> list1 = new ArrayList<>();
         list1.add("a");
@@ -71,7 +71,7 @@ public class TestListExamples{
         assertEquals(result, ListExamples.merge(list1, list2));
 	}
 
-    @Test 
+    @Test(timeout = 100)
 	public void testFilter2() {
     List<String> list1 = new ArrayList<>();
     list1.add("c");
@@ -82,9 +82,4 @@ public class TestListExamples{
     result.add("c");
     assertEquals(result, ListExamples.merge(list1, list2));
 	}
-    @Test(timeout = 100)
-    public void testTimeout() {
-	while(true) {}
-    }
-
 }
